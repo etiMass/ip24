@@ -1,3 +1,6 @@
 int round(double n) {
-    return (int) n+1;
+    if ((n - (int) n) >= 0.5)
+        return (int) (n+0.5);
+    else
+        return (int) n;
 }
